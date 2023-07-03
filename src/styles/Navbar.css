@@ -1,0 +1,22 @@
+.NavBar {
+    padding-left: 10vmin;
+    padding-right: 10vmin;
+    padding-top: 2vmin;
+    padding-bottom: 2vmin;
+    /*background-color: #61dafb;*/
+  }
+  
+  .NavLink {
+    padding: inherit;
+    color: black;
+    text-decoration-line: none;  
+  }
+  
+  .NavLink:hover {
+    /*background-color: blue;*/
+    text-decoration-line: underline;
+    text-decoration-color: rgb(255, 50, 50);
+    text-decoration-style: solid;
+    text-decoration-thickness: 1vmin;
+    text-underline-position: under;
+  }
