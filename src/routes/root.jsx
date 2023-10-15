@@ -24,17 +24,17 @@ export default function Root() {
               aria-live="polite"
             ></div>
           </form>
-          <form method="post">
-            <button type="submit">New</button>
-          </form>
         </div>
         <nav>
           <ul>
             <li>
-              <Link to={`/contacts/1`}>Your Name</Link>
+              <Link to={`/`}>Home</Link>
             </li>
             <li>
-              <Link to={`/contacts/2`}>Your Friend</Link>
+              <Link to={"/pages/shop"}>Shop dummy</Link>
+            </li>
+            <li>
+              <Link to={"/pages/blog"}>Blog dummy</Link>
             </li>
           </ul>
         </nav>
