@@ -7,25 +7,25 @@ import {
 import './styles/index.css';
 import Root from "./routes/root";
 //import Home from './pages/Home';
-//import ErrorPage from './pages/ErrorPage';
-//import Contact from './routes/contact';
+import ErrorPage from './pages/error-page';
+import Contact from './routes/contact';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    //errorElement: <ErrorPage />,
-    //children: [
-    //  {
-    //    path: "contacts/:contactId",
-    //    element: <Contact />
-    //  },
-    //  {
-    //    path: "home",
-    //    element: <Home />,
-    //  }
-    //]
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "contacts/:contactId",
+        element: <Contact />
+      }/**,
+      {
+        path: "home",
+        element: <Home />,
+      }*/
+    ]
   }
 ]);
 
