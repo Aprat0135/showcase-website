@@ -7,8 +7,10 @@ import {
 import './styles/index.css';
 import Root from "./routes/root";
 import ErrorPage from './pages/error-page';
+import Home from './pages/home';
 import Shop from './pages/shop';
-import Blog from "./pages/blog"
+import Blog from './pages/blog';
+import Calender from './pages/calender';
 
 
 const router = createBrowserRouter([
@@ -18,12 +20,20 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
+        path: "pages/home",
+        element: <Home />
+      },
+      {
         path: "pages/shop",
         element: <Shop />
       },
       {
         path: "pages/blog",
         element: <Blog />
+      },
+      {
+        path: "pages/calender",
+        element: <Calender />
       }
     ]
   }

@@ -32,9 +32,28 @@ html, body {
   width: 100%;
 }
 
-#nav {
-  width: 100%;
+.divH1 {
   height: 4rem;
+  width: 90%;
+  margin-left: 5%;
+  border: solid 1px black;
+}
+
+.divH1 img{
+  height: 4rem;
+  float: right;
+}
+
+h1 {
+  width: 45%;
+  float: left;
+  border: solid 1px black;
+}
+
+#nav {
+  width: 90%;
+  height: 4rem;
+  margin: auto;
   background-color: #f7f7f7;
   border: solid 1px #e3e3e3;
   display: flex;
@@ -53,8 +72,6 @@ nav ul {
 
 nav li {
   display: inline;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 #search-spinner {
