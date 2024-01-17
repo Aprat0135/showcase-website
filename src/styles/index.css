@@ -56,11 +56,18 @@ nav {
   width: 90%;
   height: 4rem;
   margin: auto;
-  color: #C63D2F;
   background-color: #FF9B50;
-  /*border: solid 1px #e3e3e3;*/
   display: flex;
-  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+nav span {
+  text-align: center;
+  flex-grow: 1;
+}
+
+nav span:hover {
+  background-color: #C63D2F;
 }
 
 /* nav ul {
