@@ -25,6 +25,7 @@ html, body {
   margin: 0;
   line-height: 1.5;
   color: #121212;
+  background-color: #FFBB5C;
 }
 
 #root {
@@ -47,25 +48,22 @@ html, body {
 h1 {
   width: 45%;
   float: left;
-  border: solid 1px black;
+  border: solid 1px red;
+  
 }
 
-#nav {
+nav {
   width: 90%;
   height: 4rem;
   margin: auto;
-  background-color: #f7f7f7;
-  border: solid 1px #e3e3e3;
+  color: #C63D2F;
+  background-color: #FF9B50;
+  /*border: solid 1px #e3e3e3;*/
   display: flex;
   flex-direction: row;
 }
 
-nav {
-  width: 100%;
-  display: block;
-}
-
-nav ul {
+/* nav ul {
   display: flex;
   justify-content: space-evenly;
 }
@@ -74,24 +72,9 @@ nav li {
   display: inline;
 }
 
-#search-spinner {
-  width: 1rem;
-  height: 1rem;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24'%3E%3Cpath stroke='%23000' strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M20 4v5h-.582m0 0a8.001 8.001 0 00-15.356 2m15.356-2H15M4 20v-5h.581m0 0a8.003 8.003 0 0015.357-2M4.581 15H9' /%3E%3C/svg%3E");
-  animation: spin 1s infinite linear;
-  position: absolute;
-  left: 0.625rem;
-  top: 0.75rem;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+nav li a:visited {
+  color:#C63D2F;
+} */
 
 #detail {
   flex: 1;
