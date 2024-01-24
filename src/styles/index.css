@@ -62,26 +62,25 @@ nav {
 }
 
 nav span {
-  text-align: center;
   flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav span:hover {
   background-color: #C63D2F;
 }
 
-/* nav ul {
-  display: flex;
-  justify-content: space-evenly;
+nav span a {
+  color:#121212;
+  text-decoration-line: none;
+  padding: 1.5rem;
 }
 
-nav li {
-  display: inline;
+nav span a:visited {
+  color:#121212;
 }
-
-nav li a:visited {
-  color:#C63D2F;
-} */
 
 #detail {
   flex: 1;
