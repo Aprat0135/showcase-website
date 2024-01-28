@@ -1,4 +1,12 @@
 /* originally shamelessly stolen */
+:root {
+  --primary-color: #FFBB5C;
+  --secondary-color: #FF9B50;
+  --tertiary-color: #E25E3E;
+  --quaternary-color: #C63D2F;
+  --primary-text-color: #121212;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -24,8 +32,8 @@ html, body {
   height: 100%;
   margin: 0;
   line-height: 1.5;
-  color: #121212;
-  background-color: #FFBB5C;
+  color: var(--primary-text-color);
+  background-color: var(--primary-color);
 }
 
 #root {
@@ -56,30 +64,37 @@ nav {
   width: 90%;
   height: 4rem;
   margin: auto;
-  background-color: #FF9B50;
+  background-color: var(--secondary-color);
   display: flex;
   justify-content: space-evenly;
 }
 
 nav span {
+  position: relative;
   flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
 }
 
 nav span:hover {
-  background-color: #C63D2F;
+  background-color: var(--quaternary-color);
 }
 
 nav span a {
-  color:#121212;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  z-index: 2;
+  color: var(--primary-text-color);
   text-decoration-line: none;
-  padding: 1.5rem;
 }
 
 nav span a:visited {
-  color:#121212;
+  color: var(--primary-text-color);
 }
 
 #detail {
